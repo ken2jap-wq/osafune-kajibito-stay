@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OSAFUNE KAJIBITO STAY | 刀の里に泊まり 鉄を鍛え 鍛冶人になる</title>
+<meta name="description" content="岡山県瀬戸内市・備前長船。八百年続く刀の里に滞在し、刀匠の鍛冶場で玉鋼を鍛え、自らの小刀を仕上げる2泊3日の鍛冶人体験。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Shippori+Mincho:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== 固定UI ===== -->
+<a class="logo-mark" href="index.html" aria-label="OSAFUNE KAJIBITO STAY ホーム">
+  <span class="logo-ja">備前長船</span>
+  <span class="logo-en">KAJIBITO STAY</span>
+</a>
+<nav class="top-links" aria-label="クイックリンク">
+  <a href="plan.html#entry">BOOKING</a>
+  <a href="#" title="英語版は準備中">EN</a>
+</nav>
+
+<input class="drawer-check" id="drawerCheck" type="checkbox">
+<label class="drawer-icon" for="drawerCheck" aria-label="メニュー"><span></span></label>
+<label class="drawer-overlay" for="drawerCheck"></label>
+<nav class="drawer-menu" aria-label="メインメニュー">
+  <ul>
+    <li><a href="index.html">HOME <small>トップ</small></a></li>
+    <li><a href="#about">ABOUT <small>鍛冶人ステイとは</small></a></li>
+    <li><a href="#experience">EXPERIENCE <small>鍛冶人体験</small></a></li>
+    <li><a href="plan.html">PLAN <small>2泊3日プラン</small></a></li>
+    <li><a href="#culture">CULTURE <small>刀剣文化</small></a></li>
+    <li><a href="#facilities">FACILITIES <small>施設案内</small></a></li>
+    <li><a href="#news">NEWS <small>お知らせ</small></a></li>
+    <li><a href="plan.html#entry">BOOKING <small>お申し込み</small></a></li>
+    <li><a href="#access">ACCESS <small>交通案内</small></a></li>
+    <li><a href="plan.html#entry">CONTACT <small>お問い合わせ</small></a></li>
+  </ul>
+  <ul class="drawer-sns">
+    <li><a href="#">instagram</a></li>
+    <li><a href="#">facebook</a></li>
+  </ul>
+</nav>
+
+<a id="booking-btn" href="plan.html#entry">
+  <span class="b-ja">体験案内</span>
+  <span class="b-en">BOOKING</span>
+</a>
+
+<main>
+
+  <!-- ===== ヒーロー ===== -->
+  <section class="hero" aria-label="メインビジュアル">
+    <!-- 動画を用意したら下の canvas を削除し、<video class="main-video" autoplay muted playsinline loop src="movie/top.mp4"></video> に置き換え -->
+    <div class="photo" style="--img:url(images/hero.jpg)"></div>
+    <canvas id="sparks" aria-hidden="true"></canvas>
+    <div class="hero-veil"></div>
+    <h1 class="hero-copy">
+      <span>刀の里に泊まり</span>
+      <span>鉄を鍛え</span>
+      <span>鍛冶人になる</span>
+    </h1>
+    <a class="movie-btn" href="#"><i></i>PLAY MOVIE</a>
+    <span class="scrolldown-label">SCROLL</span>
+    <div class="scrolldown"></div>
+  </section>
+
+  <!-- ===== コンセプト ===== -->
+  <section class="concept" id="about">
+    <div class="tategaki-concept fade">
+      <h2>刀の里に泊まり<br>鉄を鍛え<br>鍛冶人になる</h2>
+      <p>
+        岡山県瀬戸内市、備前長船。<br>
+        鎌倉の世から八百年、<br>
+        名だたる刀工を生み続けてきた刀の里。<br>
+        その鍛冶場に二泊三日身を置き、<br>
+        刀匠とともに玉鋼を鍛え、<br>
+        自らの小刀を打ち上げるのが鍛冶人ステイ。<br>
+        吉井川の水と、山の炭と、人の手が<br>
+        いまも名刀を生む町で、<br>
+        槌音とともに目覚める朝を。<br>
+        町が、刀匠が、<br>
+        あなたを鍛冶人として迎えます。
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== 鍛冶人体験 ===== -->
+  <section class="section" id="experience">
+    <div class="photo full-img fade" style="--img:url(images/forge.jpg)" data-label="PHOTO｜鍛錬場・向こう鎚の火花"></div>
+    <div class="text-block fade">
+      <h2 class="tategaki-title">鍛冶人体験</h2>
+      <div class="text-body">
+        <h3 class="sub-en">FORGE YOUR OWN BLADE</h3>
+        <p>
+          備前長船の現役刀匠の鍛冶場で、日本刀と同じ玉鋼（たまはがね）を用いて、自分だけの小刀を打ち上げる2泊3日の本格プログラムです。<br>
+          火床（ほど）で鋼を沸かし、刀匠の横座に向かって向こう鎚を振るう「鍛錬」、形を打ち出す「火造り」、そして刃に命を吹き込む「焼き入れ」。日本刀づくりの核心となる工程を、刀匠に師事する弟子のように体験します。最終日には茎（なかご）に自らの銘を切り、研ぎと白鞘を施した小刀が後日ご自宅に届きます。
+        </p>
+        <a class="more" href="plan.html">詳しく見る</a>
+      </div>
+    </div>
+
+    <div class="cards" aria-label="募集中のプラン">
+      <article class="card fade">
+        <a href="plan.html">
+          <div class="card-img">
+            <div class="photo" style="--img:url(images/card-01.jpg)"></div>
+            <span class="status">募集中</span>
+          </div>
+          <h3>【唯一無二の"本物"の体験】鍛冶人体験 2泊3日 〜玉鋼の鍛錬から銘切りまで、自らの小刀を打ち上げる〜 2027年 春</h3>
+        </a>
+        <p class="date"><span>2027.3.12(金)-3.14(日)　<b>催行決定（残2名）</b></span></p>
+        <p class="date"><span>2027.4.9(金)-4.11(日)　<b>受付中（残4名）</b></span></p>
+        <p class="date"><span>2027.4.23(金)-4.25(日)　<b>受付中（残4名）</b></span></p>
+      </article>
+
+      <article class="card fade">
+        <a href="plan.html">
+          <div class="card-img">
+            <div class="photo" style="--img:url(images/card-02.jpg)"></div>
+            <span class="status">募集中</span>
+          </div>
+          <h3>鍛冶人体験 2泊3日 〜刀剣の里の冬、火床の前で鋼と向き合う〜 2026年 冬</h3>
+        </a>
+        <p class="date"><span>2026.12.4(金)-12.6(日)　<b>催行決定（残1名）</b></span></p>
+        <p class="date"><span>2027.1.22(金)-1.24(日)　<b>受付中（残3名）</b></span></p>
+        <p class="date"><span>2027.2.12(金)-2.14(日)　<b>受付中（残4名）</b></span></p>
+      </article>
+
+      <article class="card fade">
+        <a href="plan.html#entry">
+          <div class="card-img">
+            <div class="photo" style="--img:url(images/card-03.jpg)"></div>
+            <span class="status">受付中</span>
+          </div>
+          <h3>【一組貸切】プライベート鍛冶人体験 2泊3日 〜ご家族・ご友人だけで刀匠の鍛冶場を貸切〜（希望日リクエスト）</h3>
+        </a>
+        <p class="date"><span>通年　<b>希望日程をお聞かせください</b></span></p>
+      </article>
+
+      <article class="card fade">
+        <a href="plan.html">
+          <div class="card-img">
+            <div class="photo" style="--img:url(images/card-04.jpg)"></div>
+            <span class="status closed">満席御礼</span>
+          </div>
+          <h3>鍛冶人体験 2泊3日 2026年 秋 〜刀剣博物館特別鑑賞付き〜</h3>
+        </a>
+        <p class="date"><span>2026.10.16(金)-10.18(日)　<b>催行決定（満席）</b></span></p>
+        <p class="date"><span>2026.11.6(金)-11.8(日)　<b>催行決定（満席）</b></span></p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== 3日間の流れ ===== -->
+  <section class="section" id="flow">
+    <div class="text-block fade">
+      <h2 class="tategaki-title">三日間の流れ</h2>
+      <div class="text-body">
+        <h3 class="sub-en">THREE DAYS IN OSAFUNE</h3>
+        <p>刀を知り、鉄を鍛え、銘を刻む。三日をかけて、一本の刃物が生まれるまでの時間を、刀匠とともに過ごします。</p>
+      </div>
+    </div>
+    <div class="days">
+      <article class="day fade">
+        <div class="photo" style="--img:url(images/day1.jpg)" data-label="PHOTO｜刀剣博物館"></div>
+        <p class="day-no">DAY 1</p>
+        <h3>刀を知る</h3>
+        <p>備前長船刀剣博物館で名刀を鑑賞し、長船の刀づくりの歴史に触れます。夕刻、鍛冶場で火入れの神事を行い、刀匠を囲む夕餉で旅が始まります。</p>
+      </article>
+      <article class="day fade">
+        <div class="photo" style="--img:url(images/day2.jpg)" data-label="PHOTO｜鍛錬・向こう鎚"></div>
+        <p class="day-no">DAY 2</p>
+        <h3>鉄を鍛える</h3>
+        <p>夜明けとともに火床に火を入れ、玉鋼を沸かして向こう鎚で鍛錬。午後は火造りで小刀の姿を打ち出します。一日中、槌音と火花の中で過ごす本番の一日です。</p>
+      </article>
+      <article class="day fade">
+        <div class="photo" style="--img:url(images/day3.jpg)" data-label="PHOTO｜焼き入れ・銘切り"></div>
+        <p class="day-no">DAY 3</p>
+        <h3>銘を刻む</h3>
+        <p>土置きを施した刃を焼き入れ、刃文が生まれる瞬間に立ち会います。茎に自らの銘を切り、刀匠から修了証を受け取って、三日間を締めくくります。</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== 刀剣文化 ===== -->
+  <section class="section" id="culture">
+    <div class="photo full-img short fade" style="--img:url(images/culture.jpg)" data-label="PHOTO｜研ぎ師・鞘師の工房"></div>
+    <div class="text-block fade">
+      <h2 class="tategaki-title">刀剣文化</h2>
+      <div class="text-body">
+        <h3 class="sub-en">CULTURE OF THE SWORD</h3>
+        <p>
+          一振りの日本刀は、刀匠ひとりの手では完成しません。刃を研ぎ出す研師、鞘を削る鞘師、鎺（はばき）をつくる白銀師、柄を巻く柄巻師。備前長船には、いまも刀にかかわる職人たちが工房を構えています。<br>
+          滞在中は職人の工房を訪ね、刀が完成するまでのすべての工程を間近に見ることができます。国宝「山鳥毛」をはじめ、名刀の里として受け継がれてきた文化を、町歩きとともに味わってください。
+        </p>
+        <a class="more" href="plan.html#schedule">スケジュールを見る</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 施設案内 ===== -->
+  <section class="section" id="facilities">
+    <div class="text-block fade">
+      <h2 class="tategaki-title">施設案内</h2>
+      <div class="text-body">
+        <h3 class="sub-en">刀匠の町の<br>築百年の古民家に泊まる</h3>
+        <p>
+          刀剣の里から歩いてすぐ、かつて鍛冶職人が暮らした町並みに佇む古民家を、鍛冶人体験に訪れた方のための宿にしました。梁や土間はそのままに、静かに休める寝室と、備前焼の器で囲む食卓をしつらえています。<br>
+          一日の鍛錬を終えたら、吉井川の風に吹かれ、備前の酒で身体をほどく夜を。
+        </p>
+        <a class="more" href="plan.html#stay">詳しく見る</a>
+      </div>
+    </div>
+    <div class="facility-grid">
+      <div class="photo fade" style="--img:url(images/stay-01.jpg)" data-label="PHOTO｜宿の外観"></div>
+      <div class="photo fade" style="--img:url(images/stay-02.jpg)" data-label="PHOTO｜客室"></div>
+      <div class="photo fade" style="--img:url(images/stay-03.jpg)" data-label="PHOTO｜備前焼の器と夕餉"></div>
+    </div>
+  </section>
+
+  <!-- ===== NEWS ===== -->
+  <section class="section" id="news">
+    <div class="text-block fade">
+      <h2 class="tategaki-title">お知らせ</h2>
+      <div class="text-body">
+        <h3 class="sub-en">NEWS</h3>
+        <ul class="news-list">
+          <li><a href="#"><span>2027年 春の鍛冶人体験 2泊3日 の募集を開始しました</span><time>2026.10.06</time></a></li>
+          <li><a href="#"><span>【重要】ご予約に際して 〜お申込金の事前精算のお願い〜</span><time>2026.10.01</time></a></li>
+          <li><a href="#"><span>OSAFUNE KAJIBITO STAY サイトを公開しました</span><time>2026.10.01</time></a></li>
+        </ul>
+        <a class="more" href="#">READ MORE</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ACCESS ===== -->
+  <section class="section" id="access">
+    <div class="text-block fade">
+      <h2 class="tategaki-title">交通案内</h2>
+      <div class="text-body access-info">
+        <h3 class="sub-en">ACCESS</h3>
+        <p>OSAFUNE KAJIBITO STAY<br>〒701-4271 岡山県瀬戸内市長船町長船（集合場所：備前長船刀剣博物館 周辺）</p>
+        <dl>
+          <dt>電車</dt><dd>JR岡山駅 → JR赤穂線 約30分「長船駅」下車、車で約5分（駅送迎あり）</dd>
+          <dt>車</dt><dd>山陽自動車道「備前IC」より約15分</dd>
+          <dt>飛行機</dt><dd>岡山桃太郎空港より車で約45分</dd>
+        </dl>
+      </div>
+    </div>
+    <iframe class="access-map fade" title="地図：備前長船刀剣博物館周辺" loading="lazy"
+      src="https://maps.google.com/maps?q=%E5%82%99%E5%89%8D%E9%95%B7%E8%88%B9%E5%88%80%E5%89%A3%E5%8D%9A%E7%89%A9%E9%A4%A8&z=14&output=embed"></iframe>
+  </section>
+
+  <!-- ===== 周辺のみどころ ===== -->
+  <section class="section" id="link">
+    <div class="text-block fade">
+      <h2 class="tategaki-title">つながり</h2>
+      <div class="text-body">
+        <h3 class="sub-en">AROUND OSAFUNE</h3>
+        <p>滞在の前後にあわせて巡りたい、備前・瀬戸内のみどころ。</p>
+      </div>
+    </div>
+    <div class="links">
+      <article class="fade">
+        <div class="photo" style="--img:url(images/link-01.jpg)" data-label="PHOTO"></div>
+        <h3>備前長船刀剣博物館</h3>
+        <p>日本で唯一の刀剣専門の博物館。名刀の展示に加え、刀匠や職人の実演を見ることができる「刀剣の里」の中心です。</p>
+      </article>
+      <article class="fade">
+        <div class="photo" style="--img:url(images/link-02.jpg)" data-label="PHOTO"></div>
+        <h3>備前焼の里・伊部</h3>
+        <p>釉薬を使わず土と炎だけで焼き上げる、千年の焼き物の町。窯元巡りと作陶体験を、旅の延長にどうぞ。</p>
+      </article>
+      <article class="fade">
+        <div class="photo" style="--img:url(images/link-03.jpg)" data-label="PHOTO"></div>
+        <h3>牛窓・瀬戸内の海</h3>
+        <p>「日本のエーゲ海」と呼ばれる穏やかな多島美。鍛冶場の火から離れ、瀬戸内の光でひと息つく半日を。</p>
+      </article>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <p class="f-logo">KAJIBITO STAY</p>
+      <p>OSAFUNE KAJIBITO STAY（仮称）<br>〒701-4271 岡山県瀬戸内市長船町長船<br>mail　info@example.com</p>
+      <p class="license">旅行業登録番号：岡山県知事登録旅行業 第◯◯号（取得予定・要差し替え）</p>
+    </div>
+    <div>
+      <h4>CONTENTS</h4>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#experience">EXPERIENCE</a></li>
+        <li><a href="plan.html">PLAN</a></li>
+        <li><a href="#culture">CULTURE</a></li>
+        <li><a href="#facilities">FACILITIES</a></li>
+        <li><a href="#news">NEWS</a></li>
+        <li><a href="#access">ACCESS</a></li>
+        <li><a href="plan.html#entry">CONTACT</a></li>
+        <li><a href="#">PRIVACY</a></li>
+        <li><a href="#">TOUR CONDITION</a></li>
+      </ul>
+    </div>
+  </div>
+  <p class="copy">© OSAFUNE KAJIBITO STAY</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
