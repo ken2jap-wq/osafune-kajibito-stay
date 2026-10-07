@@ -7,7 +7,11 @@
     var m = (el.getAttribute('style') || '').match(/url\(([^)]+)\)/);
     if (!m) return;
     var img = new Image();
-    img.onload = function () { el.classList.add('has-img'); };
+    // CSS変数内の url() はスタイルシート基準で解決されるため、読み込めた絶対URLを直接指定する
+    img.onload = function () {
+      el.style.backgroundImage = 'url("' + img.src + '")';
+      el.classList.add('has-img');
+    };
     img.src = m[1].replace(/['"]/g, '');
   });
 

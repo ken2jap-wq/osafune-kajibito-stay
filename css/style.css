@@ -38,11 +38,11 @@ h1, h2, h3, h4, h5, p { margin: 0; font-weight: 400; }
 .en { font-family: var(--en); letter-spacing: 0.14em; }
 body { font-variant-numeric: lining-nums; }
 
-/* ---------- 写真枠（images/ に同名ファイルを置くと自動で差し替わる） ---------- */
+/* ---------- 写真枠（style="--img:url(images/xx.jpg)" の画像を main.js が読み込んで背景に設定。無い場合はこのグラデーション） ---------- */
 .photo {
   position: relative;
   background-color: var(--steel);
-  background-image: var(--img), radial-gradient(120% 90% at 50% 110%, #5a2a14 0%, #241a15 45%, #121010 100%);
+  background-image: radial-gradient(120% 90% at 50% 110%, #5a2a14 0%, #241a15 45%, #121010 100%);
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -145,10 +145,10 @@ body { font-variant-numeric: lining-nums; }
   background: radial-gradient(90% 70% at 50% 120%, #6b2a10 0%, #2a1610 40%, #0d0b0a 85%);
 }
 .hero .photo, .hero video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-.hero .photo { background-color: transparent; background-image: var(--img); }
+.hero .photo { background-color: transparent; background-image: none; }
 .hero .photo::after { display: none; }
 #sparks { position: absolute; inset: 0; width: 100%; height: 100%; }
-.hero-veil { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,.25), rgba(0,0,0,0) 30%, rgba(0,0,0,.35)); }
+.hero-veil { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,.5), rgba(0,0,0,.28) 40%, rgba(0,0,0,.55)); }
 .hero-copy {
   position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 4;
   writing-mode: vertical-rl; color: #fff;
@@ -362,6 +362,13 @@ body { font-variant-numeric: lining-nums; }
 }
 .btn:hover { background: #3a332e; color: #fff; }
 .form-msg { text-align: center; font-size: 13px; margin-top: 1.4rem; color: var(--ink-soft); min-height: 1.5em; }
+
+/* ---------- 写真クレジット ---------- */
+.credit-list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+.credit-list li { display: grid; grid-template-columns: 11em 1fr; gap: 1rem; padding: .9rem 0; border-bottom: 1px solid var(--line); font-size: 12px; line-height: 1.9; }
+.credit-list .c-where { color: var(--mute); }
+.credit-list a { text-decoration: underline; text-underline-offset: 2px; }
+@media (max-width: 767px) { .credit-list li { grid-template-columns: 1fr; gap: .2rem; } }
 
 /* ---------- フェードイン ---------- */
 .fade { opacity: 0; transform: translateY(24px); transition: opacity 1.4s ease, transform 1.4s ease; }
